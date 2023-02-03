@@ -25,7 +25,7 @@ module.exports = model("seso", seso)
 
 
 const {Discord , ApplicationCommandOptionType  , EmbedBuilder } = require ("discord.js")
-const seso = require ("../schemas.js/work")
+const seso = require ("../schemas.js/work") /// this is the path of your mongo folder 
 const ms = require ('ms')
 
 
@@ -34,7 +34,7 @@ const ms = require ('ms')
 module.exports = {
 
     name: "work",
-    description: "show your userinfo 🔥"  ,
+    description: "show the coins that will win with them"  ,
 
     run: async (client, interaction) => {
 
@@ -69,7 +69,7 @@ const seso = require ("../schemas.js/work")
 module.exports = {
 
     name: "balance",
-    description: "show your userinfo 🔥"  ,
+    description: "Show how much have i coins"  ,
 
     run: async (client, interaction) => {
 
